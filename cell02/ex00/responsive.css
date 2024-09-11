@@ -1,6 +1,6 @@
 table {
     width: 100%;
-    height: auto;
+    height: 100vh;
     border-spacing: 0;
 }
 td {
@@ -9,7 +9,7 @@ td {
     padding: 4% 0 4% 0;
     font-size: 300%;
     width: 50%;
-    height: 50%;
+    height: 100%;
 }
 .first-cell {
     background-color: rgb(173, 219, 228);
