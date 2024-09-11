@@ -1,9 +1,11 @@
 table {
     width: 100%;
     height: auto;
+    border-spacing: 0;
 }
 td {
-    border: 2px solid black;
+    border: 1px solid black;
+    border-collapse: collapse;
     padding: 4% 0 4% 0;
     font-size: 300%;
     width: 50%;
