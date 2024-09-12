@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.parallax-section {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section1 {
+    background-image: url('https://wallpapercave.com/wp/wp4247401.jpg');
+}
+
+#section2 {
+    background-image: url('https://wallpapercave.com/wp/wp4575209.jpg');
+}
+
+.parallax-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.text-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2vh;
+}
+
+.text-section .content h2 {
+    margin-bottom: 20px;
+    font-size: 4vh;
+}
