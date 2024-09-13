@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vw;
+    background-color: #1e1e1e;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 8vh;
+    width: 100%;
+}
+
+header.sticky {
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.header .logo {
+    font-size: 3vh;
+    color: #fff;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2vh;
+}
+
+.header nav ul li {
+    margin-left: 2vh;
+}
+
+.header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 1vh 1.5vh;
+    border-radius: 0.5vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header nav ul li a1 {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 1vh 1.5vh;
+    border-radius: 0.5vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    background-color: #ff4081;
+    color: #fff;
+    border-radius: 0.5vh;
+}
+
+.introduct {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://media.discordapp.net/attachments/1150070638451621968/1284121075394940928/IMG_0387.jpg?ex=66e57a72&is=66e428f2&hm=1ce78527c30bd040b6ab0541891d0fe5435d497fc9f79d9d16f707c8959de8ed&=&format=webp&width=727&height=889');
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.introduct::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.introduct-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80vw;
+    padding: 2vh 2vw;
+    text-align: center;
+}
+
+.introduct h1 {
+    font-size: 6vh;
+    margin-bottom: 2vh;
+    letter-spacing: 0.5vh;
+    text-transform: uppercase;
+    color: #ff4081;
+}
+
+.introduct h2 {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    color: #fff;
+    letter-spacing: 0.2vh;
+}
+
+.introduct p {
+    font-size: 2vh;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.cta-button {
+    margin-top: 2vh;
+    padding: 1vh 2vh;
+    background-color: #00bcd4;
+    border: none;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.Certificate {
+    padding: 2vh 2vw;
+    text-align: center;
+}
+
+.Certificate h2 {
+    font-size: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: #fff;
+    letter-spacing: 0.2vh;
+}
+
+.Certificate-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.Certificate-item {
+    flex: 1 1 calc(33.333% - 2vw);
+    max-width: calc(33.333% - 2vw);
+    margin: 2vh;
+}
+
+.Certificate-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 1vh;
+    display: block;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 1024px) {
+    .Certificate-item {
+        flex: 1 1 calc(50% - 2vw);
+        max-width: calc(50% - 2vw);
+    }
+}
+
+@media (max-width: 768px) {
+    .Certificate-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.Skill {
+    text-align: center;
+    padding: 5vh 2vw;
+}
+
+.Skill h2 {
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    color: #fff;
+    letter-spacing: 0.3vh;
+}
+
+.Skill-cards {
+    display: flex;
+    justify-content: center;
+    gap: 3vh;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: linear-gradient(135deg, #1f1f1f 0%, #3a3a3a 100%);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    max-width: 20rem;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card h3 {
+    font-size: 3vh;
+    margin-bottom: 1.5vh;
+    color: #f2f2f2;
+}
+
+.card p {
+    font-size: 2vh;
+    color: #ccc;
+    margin-bottom: 0.6vh;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -5vh;
+    right: -5vh;
+    width: 20vh;
+    height: 20vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: -5vh;
+    left: -5vh;
+    width: 20vh;
+    height: 20vh;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.5);
+}
+
+.card:hover::before,
+.card:hover::after {
+    width: 25vh;
+    height: 25vh;
+}
+
+.contact {
+    text-align: center;
+    padding: 5vh 2vw;
+}
+
+.contact h2 {
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    color: #fff;
+    letter-spacing: 0.3vh;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    background: #333;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 15rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-card i {
+    font-size: 1.5rem;
+}
+
+.social-card span {
+    font-size: 1rem;
+}
+
+.social-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.social-card:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.social-card:hover {
+    background: #444;
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.social-card:hover i {
+    color: #ff4081;
+}
+
+.social-card:hover span {
+    color: #fff;
+}
+
+.footer .footer-content {
+    text-align: right;
+    margin-right: 3vh;
+    margin-bottom: 3vh;
+    font-style: italic; 
+    font-family: monospace;
+    font-size: 1.5vh; 
+}

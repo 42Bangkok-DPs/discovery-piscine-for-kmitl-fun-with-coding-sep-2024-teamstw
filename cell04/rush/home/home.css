@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    background-image: url('https://wallpapercave.com/wp/wp8971089.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin : 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 2vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    height: 8vh;
+    width: 100;
+    background-color: rgba(30, 30, 30, 0.9);
+    backdrop-filter: blur(5px); 
+    transition: background-color 0.5s ease;
+}
+
+header.sticky {
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 3vh;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2vh;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 1.5vh 2vh;
+    border-radius: 0.5vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #ff4081;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 4px 15px rgba(255, 64, 129, 0.8);
+}
+
+.intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(234, 0, 74, 0.3));
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.intro-section h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+}
+
+.intro-section h2 {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.description {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-buttons .btn {
+    padding: 12px 30px;
+    margin-left: 2vh;
+    background-color: #000000;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(255, 64, 129, 0.6);
+    color: #ff4081;
+}
+
+.portfolio-buttons .btn::before {
+    content: '✤ ';
+    color: #ff4081; 
+}
+
+.portfolio-buttons .btn:hover {
+    background-color: #000000;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 64, 129, 0.3);
+}
+
+@media (max-width: 768px) {
+    .intro-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-buttons {
+        flex-direction: column;
+    }
+}
+
+.member-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000;
+    position: relative;
+}
+
+.member-section h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: #ff4081;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 4px 15px rgba(255, 64, 129, 0.8);
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.member-list h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 15px 25px;
+    background: rgba(255, 64, 129, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 15px rgba(255, 64, 129, 0.4);
+}
+
+.member-list h2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(255, 64, 129, 0.6);
+    color: #ff4081;
+}
+
+.member-list h2::before {
+    content: '✤ ';
+    color: #ff4081;
+}
+
+@media (max-width: 768px) {
+    .member-section h1 {
+        font-size: 3rem;
+    }
+
+    .member-list h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.line {
+    text-align: center;
+    margin-bottom: 10vh;
+}
